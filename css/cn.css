@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #9013fe ;
+   /*  background: url('https://designshack.net/wp-content/uploads/background-textures.png');
+    background-size: cover; */
+}
+.contact .heading{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .heading h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact .heading  p{
+  font-weight: 300;
+  color: #fff;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.container .contactinfo .box .icon a img{
+    width: 50px;
+}
+
+.container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactinfo .box .text h3{
+    font-weight: 700;
+    color: #67f6e9;
+}
+.contactform{
+    width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-size: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #67f6e9;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+position: absolute;
+  left: 0;
+  padding: 5px 0;
+  margin: 10px 0;
+  pointer-events: none;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.3s;
+  color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+ transform: translateY(-20px);
+font-size: 12px;
+font-weight: 400;
+}
+.contactform .inputbox input[type="submit" i]{
+    width: 100px;
+    background: #67f6e9;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.contactform .inputbox input[type="submit" i]:hover{
+    background: #9013fe;
+    transform: translate(1.5);
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin-bottom: 40px;
+    }
+    .container .contactform{
+        width: 100%;
+    }
+
+}
+@media (max-width:455px){
+  .container .contactinfo{
+    margin-right: 35px;
+  }
+}
+@media (max-width:368px){
+    .container .contactinfo{
+      margin-right: 76px;
+    }
+  }
